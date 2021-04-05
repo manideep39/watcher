@@ -1,0 +1,13 @@
+{
+  "name": "watcher",
+  "description": "Warn the user of moving away from current window.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://oj.masaischool.com/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
